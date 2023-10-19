@@ -1,10 +1,10 @@
 import "./About.css";
 export function About() {
   return (
-    <main class="about-me" id="about-me">
+    <main className="about-me" id="about-me">
       <h2>About Me</h2>
 
-      <div class="aboutMeContent">
+      <div className="aboutMeContent">
         <p>My name is Hans Doderlein.</p>
         <p>
           I spent my adolescent years in South Florida where I began my first
@@ -35,7 +35,7 @@ export function About() {
         <p>I began the coding bootcamp at UNC.</p>
       </div>
 
-      <div class="profileimg">
+      <div className="profileimg">
         <img src="./src/images/ProfilePic.jpg" alt="Pofile Picture" />
       </div>
     </main>

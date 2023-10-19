@@ -6,7 +6,7 @@ export function MainFooter() {
   return (
     <footer>
       {footerLinks.map((link) => (
-        <FooterLink {...link} />
+        <FooterLink key={link.description} {...link} />
       ))}
     </footer>
   );

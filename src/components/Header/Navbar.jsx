@@ -1,11 +1,11 @@
-import { useReducer } from "react";
 import { routes } from "../../utilities/routes";
 import { NavLink } from "../NavLink/NavLink";
 import "./NavBar.css";
 import { useLocation } from "react-router-dom";
 
 export function Navbar({ showLinks }) {
-  const routeList = Object.keys(routes).map((route) => ({
+  const routeList = Object.keys(routes).map((route, index) => ({
+    key: index,
     to: routes[route].path,
     label: routes[route].label,
   }));
@@ -16,8 +16,11 @@ export function Navbar({ showLinks }) {
     <ul className="NavLinks">
       {routeList.map((route) => {
         return (
-          <li className={currentPage === route.to ? " active" : null}>
-            <NavLink key={route.to} {...route} />
+          <li
+            key={route.key}
+            className={currentPage === route.to ? " active" : null}
+          >
+            <NavLink key={route.key} {...route} />
           </li>
         );
       })}

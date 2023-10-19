@@ -6,7 +6,6 @@ import { MainFooter } from "./components/Footer/MainFooter";
 function App() {
   const routeList = Object.keys(routes).map((route) => ({ ...routes[route] }));
 
-  console.log(routeList);
   return (
     <>
       <Router>

@@ -1,0 +1,40 @@
+.contactForm {
+  height: 100vh;
+}
+
+form {
+  text-align: center;
+}
+
+.contactForm h2 {
+  text-align: center;
+  margin-top: 10px;
+  color: var(--pinkColor);
+  text-decoration: underline;
+  font-size: xx-large;
+}
+
+label {
+  color: var(--tealColor);
+}
+textarea,
+input {
+  background-color: rgb(132, 132, 132);
+  border-radius: 0.5rem;
+  padding: 5px;
+  width: 50%;
+}
+
+#submitbtn {
+  color: var(--tealColor);
+  cursor: pointer;
+}
+#submitbtn:hover,
+input:hover,
+textarea:hover {
+  background-color: rgb(64, 63, 63);
+}
+.contactForm form p {
+  color: red;
+  font-size: x-large;
+}

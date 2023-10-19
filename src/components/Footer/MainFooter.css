@@ -1,0 +1,23 @@
+footer {
+  background-image: linear-gradient(
+    rgb(70, 207, 184) 0%,
+    var(--tealColor) 100%
+  );
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+}
+
+.footerIcon {
+  height: 30px;
+  opacity: 65%;
+}
+
+.footerLink {
+  height: 30px;
+}
+
+.footerIcon:hover {
+  opacity: 100%;
+}

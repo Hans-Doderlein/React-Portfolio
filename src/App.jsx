@@ -1,6 +1,7 @@
 import { MainHeader } from "./components/Header/MainHeader";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { routes } from "./utilities/routes";
+import { MainFooter } from "./components/Footer/MainFooter";
 
 function App() {
   const routeList = Object.keys(routes).map((route) => ({ ...routes[route] }));
@@ -16,6 +17,7 @@ function App() {
           ))}
         </Routes>
       </Router>
+      <MainFooter />
     </>
   );
 }

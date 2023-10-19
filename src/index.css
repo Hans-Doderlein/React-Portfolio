@@ -8,4 +8,9 @@
   --purpleColor: #4826ef;
   --tealColor: #7fffd4;
   --grayColor: #808080;
+  --pinkColor: rgb(209, 7, 209);
+}
+
+body {
+  background-image: linear-gradient(rgb(84, 82, 82) 0%, rgb(18, 16, 16) 100%);
 }

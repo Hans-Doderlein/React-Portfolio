@@ -1,0 +1,53 @@
+/* targets entire container */
+.about-me {
+  display: flex;
+  align-items: center;
+}
+/* targets header */
+.about-me h2 {
+  flex-basis: 20%;
+  text-align: center;
+  color: var(--pinkColor);
+  font-size: 2rem;
+}
+
+.about-me h2:hover {
+  text-shadow: 0 0 1rem var(--tealColor);
+}
+
+/* targets bio */
+.aboutMeContent {
+  flex-basis: 57%;
+  text-align: center;
+  padding: 5%;
+  color: var(--tealColor);
+  border: 3px solid transparent;
+  border-left: 3px solid var(--pinkColor);
+  line-height: 1.7rem;
+  margin: 5%;
+}
+
+.aboutMeContent:hover {
+  border: 3px solid var(--pinkColor);
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem var(--pinkColor);
+}
+
+/* targets image container */
+.profileimg {
+  flex-basis: 20%;
+  max-height: 80%;
+  margin-right: 5%;
+}
+
+/* targets image */
+.profileimg img {
+  max-height: 300px;
+  border-radius: 1rem;
+  border: 3px solid var(--pinkColor);
+}
+
+.profileimg img:hover {
+  border: 3px solid var(--tealColor);
+  box-shadow: 0 0 1rem var(--tealColor);
+}

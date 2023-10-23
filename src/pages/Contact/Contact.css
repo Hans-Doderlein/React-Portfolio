@@ -6,6 +6,17 @@ form {
   text-align: center;
 }
 
+.inputBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.inputBlock label {
+  margin-bottom: 1rem;
+}
+
 .contactForm h2 {
   text-align: center;
   margin-top: 10px;

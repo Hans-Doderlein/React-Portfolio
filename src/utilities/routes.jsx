@@ -1,7 +1,7 @@
-import { About } from "../pages/About";
-import { Contact } from "../pages/Contact";
-import { Resume } from "../pages/Resume";
-import { Portfolio } from "../pages/portfolio";
+import { About } from "../pages/About/About";
+import { Contact } from "../pages/Contact/Contact";
+import { Portfolio } from "../pages/Portfolio/Portfolio";
+import { Resume } from "../pages/Resume/Resume";
 
 export const routes = {
   home: {

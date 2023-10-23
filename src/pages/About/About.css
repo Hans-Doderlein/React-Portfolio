@@ -25,6 +25,7 @@
   border-left: 3px solid var(--pinkColor);
   line-height: 1.7rem;
   margin: 5%;
+  margin-bottom: 10%;
 }
 
 .aboutMeContent:hover {

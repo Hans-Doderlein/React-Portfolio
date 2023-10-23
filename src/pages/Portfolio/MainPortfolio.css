@@ -1,0 +1,71 @@
+.portfolio .portfolioLink {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.portfolio {
+  height: 100vh;
+}
+
+.portfolioLink .card {
+  background-size: 100%100%;
+  background-position: center;
+  border: 3px solid red;
+  width: 40%;
+  margin-bottom: 5%;
+  height: 200px;
+}
+
+.portfolioLink .content {
+  display: flex;
+  justify-content: space-around;
+  width: 39.4%;
+  height: 35.4%;
+  flex-direction: column;
+  text-align: center;
+  opacity: 0;
+  background-color: rgb(178, 176, 176);
+  position: absolute;
+  padding-top: 5%;
+}
+
+.portfolioLink .contentElement img {
+  max-width: 40%;
+}
+
+.portfolioLink .card:hover .content {
+  opacity: 0.8;
+  border: 4px solid black;
+}
+
+.portfolioLink .card:hover .contentElement {
+  opacity: 1;
+  cursor: default;
+  text-decoration: none;
+}
+.portfolioLink .card:hover .contentElement h3 {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+
+.portfolioLink .card .contentElement img:hover,
+.portfolioLink .card .contentElement h3:hover {
+  cursor: pointer;
+  color: var(--purpleColor);
+  font-weight: 900;
+}
+
+.portfolioLink .contentElement a img {
+  width: 40%;
+}
+
+.contentElement {
+  flex-basis: 50%;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+}

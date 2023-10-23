@@ -20,48 +20,40 @@ export function Contact() {
   return (
     <main className="contactForm">
       <HeaderH2 title="Contact us" />
-      <br />
-      <br />
+
       <form onSubmit={() => {}}>
-        <label htmlFor="email">Email Address:</label>
-        <br />
-        <br />
+        <div className="inputBlock">
+          <label htmlFor="email">Email Address:</label>
 
-        <input
-          type="email"
-          id="email"
-          name="email"
-          onBlur={handleEmailChange}
-          required
-        />
-        <br />
-        <br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            onBlur={handleEmailChange}
+            required
+          />
+        </div>
 
-        <label htmlFor="name">Name:</label>
-        <br />
-        <br />
+        <div className="inputBlock">
+          <label htmlFor="name">Name:</label>
 
-        <input type="text" id="name" name="name" required />
-        <br />
-        <br />
+          <input type="text" id="name" name="name" required />
+        </div>
 
-        <label htmlFor="message">Message:</label>
-        <br />
-        <br />
+        <div className="inputBlock">
+          <label htmlFor="message">Message:</label>
 
-        <textarea
-          name="message"
-          id="message"
-          cols="50"
-          rows="4"
-          required
-        ></textarea>
-        <br />
-        <br />
+          <textarea
+            name="message"
+            id="message"
+            cols="50"
+            rows="4"
+            required
+          ></textarea>
+        </div>
 
         {invalidEmail ? null : <p>Please input a valid email address!</p>}
-        <br />
-        <br />
+
         <input id="submitbtn" type="submit" value="Submit" />
       </form>
     </main>

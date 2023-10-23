@@ -4,7 +4,7 @@ import "./MainFooter.css";
 
 export function MainFooter() {
   return (
-    <footer>
+    <footer className="mainFooter">
       {footerLinks.map((link) => (
         <FooterLink key={link.description} {...link} />
       ))}

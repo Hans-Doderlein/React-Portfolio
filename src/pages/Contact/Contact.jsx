@@ -1,4 +1,4 @@
-import { HeaderH2 } from "../components/Header/Header";
+import { HeaderH2 } from "../../components/Header/Header";
 import { useState } from "react";
 import "./Contact.css";
 
@@ -22,7 +22,7 @@ export function Contact() {
       <HeaderH2 title="Contact us" />
       <br />
       <br />
-      <form action="">
+      <form onSubmit={() => {}}>
         <label htmlFor="email">Email Address:</label>
         <br />
         <br />

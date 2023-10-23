@@ -1,4 +1,4 @@
-footer {
+.mainFooter {
   background-image: linear-gradient(
     rgb(70, 207, 184) 0%,
     var(--tealColor) 100%
@@ -7,17 +7,20 @@ footer {
   justify-content: space-around;
   align-items: center;
   height: 50px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
-.footerIcon {
+.mainFooter .footerIcon {
   height: 30px;
   opacity: 65%;
 }
 
-.footerLink {
+.mainFooter .footerLink {
   height: 30px;
 }
 
-.footerIcon:hover {
+.mainFooter .footerIcon:hover {
   opacity: 100%;
 }

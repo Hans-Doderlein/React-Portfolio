@@ -1,7 +1,21 @@
 import "./Resume.css";
-import { HeaderH2, HeaderH3 } from "../../components/Header/Header";
+import { HeaderH3 } from "../../components/Header/Header";
 import { frontEnd, backEnd, sourceControl } from "../../utilities/proficencies";
 
+function ResumeCard({ title, list }) {
+  return (
+    <div className="resume">
+      <HeaderH3 title={title} />
+      <ul>
+        {list.map((item) => (
+          <li key={item} className="proficiency">
+            - {item}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
 export function Resume() {
   return (
     <div className="resumePage">
@@ -11,30 +25,9 @@ export function Resume() {
       </div>
 
       <div className="resumeInfo">
-        <div className="resume">
-          <HeaderH3 title="Front End Proficiencies" />
-          <ul>
-            {frontEnd.map((item) => (
-              <li className="proficiency">- {item}</li>
-            ))}
-          </ul>
-        </div>
-        <div className="resume">
-          <HeaderH3 title="Back End Proficiencies" />
-          <ul>
-            {backEnd.map((item) => (
-              <li className="proficiency">- {item}</li>
-            ))}
-          </ul>
-        </div>
-        <div className="resume">
-          <HeaderH3 title="Source Control Proficiencies" />
-          <ul>
-            {sourceControl.map((item) => (
-              <li className="proficiency">- {item}</li>
-            ))}
-          </ul>
-        </div>
+        <ResumeCard title="Front End Proficiencies" list={frontEnd} />
+        <ResumeCard title="Back End Proficiencies" list={backEnd} />
+        <ResumeCard title="Source Control" list={sourceControl} />
       </div>
     </div>
   );

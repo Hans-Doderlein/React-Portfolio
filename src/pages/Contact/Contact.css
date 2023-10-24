@@ -50,3 +50,9 @@ textarea:hover {
   color: red;
   font-size: x-large;
 }
+
+@media screen and (max-width: 770px) {
+  .contactForm {
+    margin-bottom: 10%;
+  }
+}

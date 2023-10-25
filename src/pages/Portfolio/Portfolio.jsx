@@ -15,7 +15,7 @@ export function Portfolio() {
             style={{ backgroundImage: `url(${mainImg})` }}
           >
             <div className="content">
-              <a href={weblink} className="contentElement">
+              <a href={weblink} target="_blank" className="contentElement">
                 <HeaderH3 title={name} />
               </a>
 

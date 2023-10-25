@@ -21,7 +21,7 @@ export function Resume() {
     <div className="resumePage">
       <div className="resumeLink">
         Dowload My Resume &nbsp;
-        <a href="../Files/Resume.docx">Here</a>
+        <a href="./Files/Resume.docx">Here</a>
       </div>
 
       <div className="resumeInfo">

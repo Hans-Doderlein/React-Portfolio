@@ -36,7 +36,7 @@ export function About() {
       </div>
 
       <div className="profileimg">
-        <img src="./src/images/ProfilePic.jpg" alt="Pofile Picture" />
+        <img src="./images/ProfilePic.jpg" alt="Pofile Picture" />
       </div>
     </main>
   );

@@ -14,7 +14,7 @@ export function MainHeader() {
         <NavButton showLinks={showLinks} toggleShowLinks={toggleShowLinks} />
       </div>
 
-      <Navbar showLinks={showLinks} />
+      <Navbar showLinks={showLinks} toggleShowLinks={toggleShowLinks} />
     </header>
   );
 }

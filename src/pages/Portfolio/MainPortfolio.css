@@ -19,6 +19,7 @@
   width: 40%;
   margin-bottom: 5%;
   height: 200px;
+  max-width: 600px;
 }
 
 .portfolioLink .content {
@@ -28,46 +29,16 @@
   height: 100%;
   flex-direction: column;
   text-align: center;
-
   visibility: hidden;
   background-color: rgb(225, 220, 220, 0);
-
   padding-top: 5%;
+  transition: all 0.25s ease;
 }
 
 .portfolioLink .contentElement img {
   max-width: 40%;
 }
 
-.portfolioLink .card:hover .content {
-  visibility: visible;
-  background-color: rgb(225, 220, 220, 0.8);
-  border: 4px solid black;
-}
-
-.portfolioLink .card:hover .contentElement {
-  opacity: 1;
-  cursor: default;
-  text-decoration: none;
-}
-.portfolioLink .card:hover .contentElement h3 {
-  text-decoration: none;
-  color: black;
-  font-size: 2rem;
-}
-
-.portfolioLink .card .contentElement img:hover,
-.portfolioLink .card .contentElement h3:hover {
-  cursor: pointer;
-}
-
-.portfolioLink .card .contentElement img:hover {
-  opacity: 0.75;
-}
-
-.portfolioLink .card .contentElement h3:hover {
-  color: red;
-}
 .portfolioLink .contentElement a img {
   width: 40%;
 }
@@ -81,9 +52,67 @@
   justify-content: center;
 }
 
+.portfolioLink .card .contentElement h3 {
+  color: black;
+  font-size: 2rem;
+  text-decoration: none;
+  width: 35%;
+  margin: auto;
+}
+
+.portfolioLink .card .content a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 770px) {
+  .portfolioLink .card:hover .content {
+    visibility: visible;
+    background-color: rgb(225, 220, 220, 0.8);
+    border: 4px solid black;
+  }
+
+  .portfolioLink .card:hover .contentElement {
+    opacity: 1;
+    cursor: default;
+    text-decoration: none;
+  }
+
+  .portfolioLink .card .contentElement img:hover,
+  .portfolioLink .card .contentElement h3:hover {
+    cursor: pointer;
+  }
+
+  .portfolioLink .card .contentElement img:hover {
+    opacity: 0.75;
+  }
+
+  .portfolioLink .card .contentElement h3:hover {
+    color: red;
+  }
+}
 @media screen and (max-width: 770px) {
   .portfolioLink {
     margin: 2rem 0;
+  }
+  .portfolioLink .content {
+    visibility: visible;
+    background-color: rgb(225, 220, 220, 0.7);
+  }
+  .portfolioLink .content h3 {
+    background-color: white;
+    width: 50%;
+    margin: -2.1rem auto;
+    padding: 5px;
+    border: 2px solid red;
+    border-radius: 1rem;
+    color: black;
+  }
+  .portfolioLink .content a {
+    text-decoration: none;
+  }
+
+  .portfolioLink .content a img {
+    border-radius: 1rem;
   }
 }
 

@@ -3,7 +3,7 @@ import { NavLink } from "../NavLink/NavLink";
 import "./NavBar.css";
 import { useLocation } from "react-router-dom";
 
-export function Navbar({ showLinks }) {
+export function Navbar({ showLinks, toggleShowLinks }) {
   const routeList = Object.keys(routes).map((route, index) => ({
     key: index,
     to: routes[route].path,
@@ -12,11 +12,16 @@ export function Navbar({ showLinks }) {
 
   const currentPage = useLocation().pathname;
 
+  function handleClick() {
+    toggleShowLinks(false);
+  }
+
   const links = (
     <ul className="NavLinks">
       {routeList.map((route) => {
         return (
           <li
+            onClick={handleClick}
             key={route.key}
             className={currentPage === route.to ? " active" : null}
           >

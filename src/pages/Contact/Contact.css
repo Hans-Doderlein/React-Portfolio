@@ -1,9 +1,18 @@
 .contactForm {
   height: 100vh;
+  margin-bottom: 15%;
 }
 
 form {
   text-align: center;
+}
+
+.contactForm .success {
+  color: rgb(6, 237, 10);
+}
+
+.contactForm form > p:not(:last-of-type) {
+  margin-bottom: 0.7rem;
 }
 
 .inputBlock {
@@ -35,11 +44,13 @@ input {
   padding: 5px;
   width: 50%;
   color: var(--tealColor);
+  padding: 5px;
 }
 
 #submitbtn {
   color: var(--tealColor);
   cursor: pointer;
+  margin-top: 3%;
 }
 #submitbtn:hover,
 input:hover,
@@ -54,5 +65,12 @@ textarea:hover {
 @media screen and (max-width: 770px) {
   .contactForm {
     margin-bottom: 10%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .contactForm input,
+  .contactForm textarea {
+    width: 80%;
   }
 }

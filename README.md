@@ -1,6 +1,6 @@
 # React-Portfolio
 
-## Link ->
+## Link -> https://nick3399-portfolio.netlify.app/resume
 
 ![License](https://img.shields.io/badge/license-MIT-blue)
 

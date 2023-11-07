@@ -1,4 +1,5 @@
 import "./About.css";
+import profilepic from "../../images/ProfilePic.jpg";
 export function About() {
   return (
     <main className="about-me" id="about-me">
@@ -36,7 +37,7 @@ export function About() {
       </div>
 
       <div className="profileimg">
-        <img src="./images/ProfilePic.jpg" alt="Pofile Picture" />
+        <img src={profilepic} alt="Pofile Picture" />
       </div>
     </main>
   );

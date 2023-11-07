@@ -1,10 +1,6 @@
-import techimg from "../images/techblog.png";
-import noteimg from "../images/notetaker.png";
-import weatherimg from "../images/weather.png";
-import scheduleimg from "../images/schedule.png";
-import quizimg from "../images/codequiz.png";
-import passimg from "../images/passgen.png";
-import gitimg from "../images/github.jpeg";
+import images from "../images";
+const { techimg, noteimg, weatherimg, scheduleimg, quizimg, passimg, gitimg } =
+  images;
 
 export const projects = [
   {

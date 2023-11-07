@@ -1,16 +1,18 @@
+import images from "../images";
+const { gitimg, linkedimg, stackimg } = images;
 export const footerLinks = [
   {
-    icon: "./images/github.jpeg",
+    icon: gitimg,
     link: "https://github.com/Hans-Doderlein?tab=repositories",
     description: "Github icon",
   },
   {
-    icon: "./images/linkedIn.jpeg",
+    icon: linkedimg,
     link: "https://www.linkedin.com/in/hans-doderlein-1bb70a23a/",
     description: "linkedIn icon",
   },
   {
-    icon: "./images/stack.jpeg",
+    icon: stackimg,
     link: "https://stackoverflow.com/users/22765783/nihcolas99",
     description: "Stack Overflow icon",
   },
